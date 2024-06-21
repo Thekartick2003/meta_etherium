@@ -19,7 +19,7 @@ Here is the function named as "mint" which having two parameters names as addres
 // mint function  
   function Mint(address _address, uint _value) public{
     totalSupply += _value;
-    balance[_address] +=_value;
+    balance[_address] +=_value; }
 ```
 Moreover, here we have the burn function which works opposite the mint function. It is meant to deduct the token from the sender or user. In this burn function token, the value gets deducted from the total supply and the balance of the “sender”. The Burn function also checks the sufficient balance before burning the token.
 ```solidity
@@ -27,7 +27,7 @@ Moreover, here we have the burn function which works opposite the mint function.
  function Burn(address _address, uint _value) public{
     if(balance[_address]>= _value)
     totalSupply -= _value;
-    balance[_address] -= _value;
+    balance[_address] -= _value; }
 ```
 ### THANK YOU FOR READING !!!
 # Author
